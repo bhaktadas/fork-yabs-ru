@@ -892,17 +892,16 @@ if [ -z "$SKIP_IPERF" ]; then
 		"speedtest.sin1.sg.leaseweb.net" "5201-5210" "Leaseweb" "Singapore, SG (10G)" "IPv4|IPv6" \
   		# America
 		"la.speedtest.clouvider.net" "5200-5209" "Clouvider" "Los Angeles, CA, US (10G)" "IPv4|IPv6" \
-		"speedtest.nyc1.us.leaseweb.net" "5201-5210" "Leaseweb" "NYC, NY, US (10G)" "IPv4|IPv6" \
+		"speedtest.nyc1.us.leaseweb.net" "5201-5210" "Leaseweb" "New-York, US (10G)" "IPv4|IPv6" \
 		"speedtest.sao1.edgoo.net" "9204-9240" "Edgoo" "Sao Paulo, BR (1G)" "IPv4|IPv6"
 	)
 
 	# if the "REDUCE_NET" flag is activated, then do a shorter iperf test with only three locations
-	# (Clouvider London, Clouvider NYC, and Online.net France)
 	if [ -n "$REDUCE_NET" ]; then
 		IPERF_LOCS=( \
-			"lon.speedtest.clouvider.net" "5200-5209" "Clouvider" "London, UK (10G)" "IPv4|IPv6" \
-			"speedtest.sin1.sg.leaseweb.net" "5201-5210" "Leaseweb" "Singapore, SG (10G)" "IPv4|IPv6" \
-			"speedtest.nyc1.us.leaseweb.net" "5201-5210" "Leaseweb" "NYC, NY, US (10G)" "IPv4|IPv6" \
+   			"spd-rudp.hostkey.ru" "5201-5209" "Hostkey" "Moscow, RU (??G)" "IPv4|IPv6" \
+	  		"iperf-ams-nl.eranium.net" "5201-5210" "Eranium" "Amsterdam, NL (100G)" "IPv4|IPv6" \
+	 		"speedtest.nyc1.us.leaseweb.net" "5201-5210" "Leaseweb" "New-York, US (10G)" "IPv4|IPv6"
 		)
 	fi
 	
