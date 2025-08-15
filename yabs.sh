@@ -878,9 +878,9 @@ if [ -z "$SKIP_IPERF" ]; then
 	IPERF_LOCS=( \
 		# Russia
 		"spd-rudp.hostkey.ru" "5201-5209" "Hostkey" "Moscow, RU (??G)" "IPv4|IPv6" \
-  		"st.ekat.ertelecom.ru" "5201" "Ertelecom" "Yekaterinburg, RU (??G)" "IPv4|IPv6" \
-		"st.spb.ertelecom.ru" "5201" "Ertelecom" "Saint Petersburg, RU (??G)" "IPv4|IPv6" \
-	  	"st.rostov.ertelecom.ru" "5201" "Ertelecom" "Rostov-on-Don, RU (??G)" "IPv4|IPv6" \
+  		"st.ekat.ertelecom.ru" "5201-5201" "Ertelecom" "Yekaterinburg, RU (??G)" "IPv4|IPv6" \
+		"st.spb.ertelecom.ru" "5201-5201" "Ertelecom" "Saint Petersburg, RU (??G)" "IPv4|IPv6" \
+	  	"st.rostov.ertelecom.ru" "5201-5201" "Ertelecom" "Rostov-on-Don, RU (??G)" "IPv4|IPv6" \
   		# Europe
   		"lon.speedtest.clouvider.net" "5200-5209" "Clouvider" "London, UK (10G)" "IPv4|IPv6" \
 		"iperf-ams-nl.eranium.net" "5201-5210" "Eranium" "Amsterdam, NL (100G)" "IPv4|IPv6" \
